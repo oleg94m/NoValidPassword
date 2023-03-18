@@ -1,0 +1,12 @@
+type: code
+files:
+- name: src/Main.java
+  visible: true
+  text: |-
+    public static boolean noCommonLetters(String s1, String s2){
+     //put your code here
+        return true;
+    }
+  learner_created: false
+status: Unchecked
+record: -1

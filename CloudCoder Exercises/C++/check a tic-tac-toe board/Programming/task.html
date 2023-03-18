@@ -1,0 +1,40 @@
+<html>
+ <head></head>
+ <body>
+  <h2 style="text-align: center;">check a tic-tac-toe board</h2> 
+  <p> The program has a 3x3 array of <code>int</code> values, called <code>board</code>, which represents a tic-tac-toe board. When the program is run, it will read 9 integer values representing the configuration of the tic-tac-toe board: a 0 indicates an empty space, a 1 represents an X, and a 2 represents an O. The input values are read row by row: the first set of three values are the first row, the second set of three values are the second row, etc. </p> 
+  <p> For example, consider the following input: </p> 
+  <blockquote>
+   <code>0 0 2 2 1 1 0 0 1</code>
+  </blockquote> 
+  <p> This input represents the following board: </p> 
+  <blockquote>
+   <pre> | |O
+-+-+-
+O|X|X
+-+-+-
+ | |X
+</pre>
+  </blockquote> 
+  <p> Your task is the following: determine whether the X player has won the game by placing three Xs in a single row, column, or diagonal. The output of the program should be one of the following lines: </p> 
+  <blockquote> 
+   <pre>X wins in row <i>N</i>
+X wins in column <i>N</i>
+X wins in a diagonal
+X has not won
+</pre> 
+  </blockquote> 
+  <p> In these messages, <i>N</i> is a row or column number. 0 is the first row or column, 1 is the second row or column, and 2 is the third row or column. </p> 
+  <p> Example inputs and expected outputs: </p> InputExpected output 
+  <code>0 0 2 2 1 1 0 0 1</code> 
+  <code>X has not won</code> 
+  <code>1 2 0 2 1 2 0 0 1</code> 
+  <code>X wins in a diagonal</code> 
+  <p>Hints:</p> 
+  <ul> 
+   <li>You can assume that X will have at most a single winning row, column, or diagonal </li> 
+   <li>It may be helpful to use a boolean variable to keep track of whether or not a winning row/column/diagonal has been found: this will help the program know when to print the <code>X has not won</code> message </li> 
+   <li> You may want to use a loop to check for winning rows and columns </li> 
+  </ul>
+ </body>
+</html><br><br><font color="gray">Memory limit: 256 MB</font><br><font color="gray">Time limit: 5 seconds</font><br><br>

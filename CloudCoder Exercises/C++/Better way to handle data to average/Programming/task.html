@@ -1,0 +1,16 @@
+<html>
+ <head></head>
+ <body>
+  <h2 style="text-align: center;">Better way to handle data to average</h2> 
+  <p>Did you remember the 3 different ways of computing means? For those of you who have blocked all memories of last week from your mind, they are <a href="http://en.wikipedia.org/wiki/Arithmetic_mean" rel="nofollow noopener noreferrer">the arithmetic mean</a>, <a href="http://en.wikipedia.org/wiki/Geometric_mean" rel="nofollow noopener noreferrer">geometric mean</a>, and <a href="http://en.wikipedia.org/wiki/Harmonic_mean" rel="nofollow noopener noreferrer">harmonic mean</a>. The algorithm to compute the arithmetic mean of <span>n</span> values is:</p> 
+  <pre>arithmMean ← (value1 + value2 + ... + value<span>n) / <span>n</span>
+</span></pre> 
+  <p>The algorithm to compute the geometric mean of <span>n</span> values is:</p> 
+  <pre>geoMean ← pow(value1 * value2 * ... * value<span>n, 1.0/<span>n</span>)
+</span></pre> 
+  <p>The algorithm to compute the harmonic mean of <span>n</span> values is:</p> 
+  <pre>harMean ← <span>n</span> / (1.0/value1 + 1.0/value2 + ... + 1.0/value<span>n)
+</span></pre> 
+  <p>For your program, write a function, named <code>computeMean</code>, that has 4 parameters: an array of <code>double</code>s, an <code>int</code> specifying the length of the array, and TWO pass-by-reference parameters of type <code>double</code> to return the geometric mean and harmonic mean of the array entries. Your function will also return a double equal to the arithmetic mean of the array's entries. You then need to write your <code>main()</code> function so that it creates two <code>double</code> arrays: one with a length of 2 and one with a length of 3. Read in the first 2 values into the first array and use this in a call to <code>computeMean()</code>. Print out the arithmentic mean, geometric mean, and harmonic means it computes (separate them by spaces). Then read in the 3 numbers into your other array, use it in a call to <code>computeMean</code>, and print out the arithmetic mean, geometric mean, and harmonic mean computed then (again separated by spaces). ALL 6 NUMBERS SHOULD APPEAR ON THE SAME LINE.</p>
+ </body>
+</html><br><br><font color="gray">Memory limit: 256 MB</font><br><font color="gray">Time limit: 5 seconds</font><br><br>

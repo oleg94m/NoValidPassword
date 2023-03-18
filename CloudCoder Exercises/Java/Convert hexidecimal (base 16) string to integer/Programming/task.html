@@ -1,0 +1,19 @@
+<html>
+ <head></head>
+ <body>
+  <p> Use <em>recursion</em> to convert a string of hexidecimal digits to an integer. Don't use a loop! </p> 
+  <p> The "digits" of a hexidecimal number are in base 16. 0-9 are interpreted as usual, and the letters "a" through "f" represent the values 10 through 15. So, for example, </p> 
+  <blockquote>
+    c2b 
+  </blockquote> 
+  <p> Represents the integer 3115, because "c" = 12, "b" = 11, and 12*162 + 2*161 + 11*160 = 3115. </p> 
+  <p> You may assume that all of the letters in the input string will be lower case. </p> 
+  <p> Hints: </p> 
+  <ul> 
+   <li>Think about what would be an appropriate base case. The first thing the method should do is check a base case. </li> 
+   <li>The <code>length</code> method gets the length (number of characters) of a string. </li> 
+   <li>Use the <code>charAt</code> method to get the character value at a particular index in the string. </li> 
+   <li>The <code>substring</code> method returns a string that contains all of the characters from a start index (inclusive) to and end index (exclusive). So, for example, <code>s.substring(0, s.length()-1)</code> would return a string with all of the characters except the last character. </li> 
+  </ul>
+ </body>
+</html><br><b>Sample Input:</b><br><pre><code class="language-no-highlight">c2b<br></code></pre><br><b>Sample Output:</b><br><pre><code class="language-no-highlight">3115</code></pre><br><br><br><font color="gray">Memory limit: 256 MB</font><br><font color="gray">Time limit: 8 seconds</font><br><br>

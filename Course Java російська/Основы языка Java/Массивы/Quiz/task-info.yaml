@@ -1,0 +1,24 @@
+type: choice
+is_multiple_choice: true
+options:
+- text: '!(false &amp;&amp; true || !true &amp;&amp; false || false)'
+- text: '!((true || false) &amp;&amp; !(false))'
+- text: "true"
+- text: true || false
+- text: true &amp;&amp; false
+- text: false || true &amp;&amp; false
+files:
+- name: src/Task.java
+  visible: true
+  text: |
+    // You can experiment here, it won’t be checked
+
+    public class Task {
+      public static void main(String[] args) {
+        // put your code here
+      }
+    }
+  learner_created: false
+status: Unchecked
+record: -1
+local_check: true

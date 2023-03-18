@@ -1,0 +1,23 @@
+type: choice
+is_multiple_choice: false
+options:
+- text: Массив, выведенный на экран в столбик
+- text: Ошибку
+- text: Массив, выведенный на экран в строку
+- text: строку a
+- text: Указание на тип данных и место в памяти компьютера
+files:
+- name: src/Task.java
+  visible: true
+  text: |
+    // You can experiment here, it won’t be checked
+
+    public class Task {
+      public static void main(String[] args) {
+        // put your code here
+      }
+    }
+  learner_created: false
+status: Unchecked
+record: -1
+local_check: true

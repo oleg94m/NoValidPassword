@@ -1,0 +1,48 @@
+type: code
+files:
+- name: src/Main.java
+  visible: true
+  text: |-
+    import java.util.Scanner;
+
+    class MyProgram{
+        public static void main(String[] args){
+
+        }
+    }
+  learner_created: false
+status: Failed
+feedback:
+  message: |
+    Failed test #1 of 3. Wrong answer
+
+    This is a sample test from the problem statement!
+
+    Test input:
+    17
+
+    Correct output:
+    1
+    4
+    9
+    16
+
+    Your code output:
+    0
+    3
+    6
+    5
+    4
+    7
+    10
+    9
+    8
+    11
+    14
+    13
+    12
+    15
+    18
+    end
+  time: Thu, 14 Jul 2022 12:42:50 UTC
+record: -1

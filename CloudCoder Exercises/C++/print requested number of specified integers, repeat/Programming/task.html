@@ -1,0 +1,32 @@
+<html>
+ <head></head>
+ <body>
+  <h2 style="text-align: center;">print requested number of specified integers, repeat</h2> 
+  <p> Put on your programming hat: this exercise is challenging! </p> 
+  <p> The program will read a series of integer input values of the form </p> 
+  <blockquote>
+   <i>which</i> 
+   <i>howmany</i> 
+   <i>which</i> 
+   <i>howmany</i> ... -1
+  </blockquote> 
+  <p> Each <i>which</i> value specifies a particular integer that should be printed. Each <i>howmany</i> value specifies how many of that integer should be printed. If a <i>which</i> value is -1, then that means that the input has ended and the program should stop. </p> 
+  <p> For example, if the input to the program is <b>2 4 3 7 -1</b> then the output should be </p> 
+  <blockquote>
+   <pre>22223333333</pre>
+  </blockquote> 
+  <p> Another example: if the input to the program is <b>8 4 5 1 9 2 -1</b>, then the output should be </p> 
+  <blockquote>
+   <pre>8888599</pre>
+  </blockquote> 
+  <p>Hints:</p> 
+  <ul> 
+   <li>Use an outer <code>while</code> loop, where each iteration should either read <i>which</i> and <i>howmany</i> values, or read a -1</li> 
+   <li>If a -1 is read, set a variable that will cause the loop to terminate</li> 
+   <li>If <i>which</i> and <i>howmany</i> values are read, use a <code>for</code> loop to print the requested number of integer values</li> 
+   <li>Do not assume that if a -1 is read that it will be followed by another integer value. So, unconditionally reading two integer values on each iteration of the <code>while</code> loop won't work</li> 
+   <li>Make sure all of the output is printed on a single line</li> 
+   <li>Don't print spaces between the output values</li> 
+  </ul>
+ </body>
+</html><br><br><font color="gray">Memory limit: 256 MB</font><br><font color="gray">Time limit: 5 seconds</font><br><br>

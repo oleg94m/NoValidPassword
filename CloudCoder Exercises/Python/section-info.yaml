@@ -1,0 +1,69 @@
+content:
+- Compute the sum of two numbers
+- Find the unique number in a list of odd number of integers
+- Compute the product of two numbers
+- Usual first program
+- Usual first program (1)
+- Shift a character ahead by a given number of letters
+- Shift a character backwards, wrapping around
+- Check if all instances of string a appear before string b
+- Return true if the function parameter is less than 10
+- Is a number positive and less than 10
+- Is one parameter between the other two
+- Does any pair of parameters sum to 20
+- Is at least one parameter positive
+- Is exactly one parameter positive
+- Is the number Prime
+- Find the largest number
+- Count the number of As in a string
+- Count all instances of a given character
+- Replace the first character in the string
+- Replace all of the given characters with c
+- Replace all of the given character with the given variable
+- Replace chars between two indices with given string
+- Return true the second string is in the main string
+- Return true if the second string is not in the first string
+- Count the most common DNA base pairs
+- Check if a String is a DNA string of base pairs
+- Count the number of genes in a DNA string
+- Find the sequences that occur between two genes
+- Sum all the numbers in the list
+- Write a program that takes a list and supplies the average
+- Compute the max of a list
+- Sum the elements of a list whose value is over 10
+- Sum all values over a parameter N
+- Return the index of the max value
+- Find the index of the longest string
+- Count number of strings longer than given parameter
+- Count the number of values that are above average
+- Count number of times 7 occurs right before 9 in list
+- Count num times two ints occur in order in given list
+- Count num times NM or MN occur in a given list
+- Count the number of times each value occurs
+- Count num values greater by index in two lists
+- Check if a list of ints is sorted
+- Swap values using a dictionary
+- Reverse dictionary by making keys values and vice-versa
+- Count the number of matching values in a list
+- Check if openers and closers match-up
+- Read the postfix expression and evaluate it
+- Insert an interval into a list of intervals
+- Merge contents of two arrays without duplicates
+- Apply the algorithm and return the iteration count
+- Apply the algorithm and return the iteration count (1)
+- Apply the algorithm and return the iteration count (2)
+- p1-1
+- p1-2
+- p1-3
+- p1-4
+- p2-1
+- p2-2
+- p2-3
+- p2-4
+- exercise-1
+- exercise-2
+- exercise-3
+- exercise-4
+- exercise-5
+- exercise-6
+- exercise-7

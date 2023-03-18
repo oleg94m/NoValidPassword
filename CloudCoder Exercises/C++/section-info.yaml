@@ -1,0 +1,89 @@
+content:
+- Print hello, world
+- Make the computer print a truth
+- Fix the declarations so the program works
+- Read in and print out the user's height and shoe size
+- Write a program that computes how fast you drove
+- Compute how much it will cost to fill a pool
+- Compute and print out the AND truth table
+- Write a better speed computation program
+- Translate QPA to nerd
+- Compute the cost of filling a gas tank
+- Print out the smallest of 3 numbers
+- Compute the sum of the entered data
+- Print out the first n square numbers
+- Write and use a simple function named average
+- Write and use a function calculating sales tax
+- Write a function which computes all 3 means
+- Read data into an array and then print it out
+- Better way to handle data to average
+- Teach a computer to handle introductions
+- Write code which returns the smallest item in an array
+- Print out the sums of a table's rows and columns
+- Trick or treat and revisit an old enemy
+- Complete a function which returns an address
+- Become inspired by the Buffalo Bills
+- Compute a color the user would tolerate
+- Complete the program which simplifies a fraction
+- Write a program which helps track POWs
+- Exercise 1
+- Exercise 3
+- Exercise 2
+- Exercise 5
+- Exercise 4
+- Warm-up exercise (start here)
+- include an integer value in a message
+- read an integer, print a message
+- how old are you in hamster years
+- convert Fahrenheit to Celsius
+- Given the area of a circle, what is its radius
+- how far will the potato fly
+- Compute the average of two numbers
+- Compute a final course grade
+- find the length of the hypotenuse
+- apply discounts for members
+- I can spell banana, but I don't know when to stop
+- 3...2...1...blast off_
+- 1, 2, 4, 8, etc
+- print multiples of specified integer
+- estimate value of pi using a series sum
+- 1, 1, 2, 3, 5, 8, 13,
+- print integers in range, skipping by increments of 3
+- print this week's day numbers
+- complete a function which prints the sum of two integers
+- print requested number of specified integers, repeat
+- print groups of 1s, 2s, etc
+- Print the date in a friendly format
+- How many jelly beans do you get
+- compute the total cost of several items
+- Compute how much rice each person gets
+- Compute the value of a double coupon
+- Checks input value against a simple filter
+- Get the cost from the user, print if they have enough funds
+- Print the check to customer, based on their age
+- Compute the value of double and triple coupons
+- Checks input value against a  complex  filter
+- 'Count the # of valid inputs prior to the first invalid input'
+- Scan an array for values that satisfy a given criteria
+- Find all consecutive pairs that add to a given value
+- Sum array values until total exceeds given value
+- Determine which value in an array is different
+- Compute the answer to the ultimate question
+- Find all primes within a specified range
+- function to compute sum of array elements
+- determine if array elements are in ascending order
+- Count the number of odd integer values in an array
+- return the maximum of the three values
+- add integer values (with pointers!)
+- compute the area of a Rectangle struct
+- Enter values into an array
+- Swap elements of an array
+- Find the number of occurrences of a value in an array
+- Compute Fibonacci numbers via an array
+- use a function to generate a diamond
+- A more difficult version of lowerThan20
+- generate a character pattern using a function
+- Print Hello world
+- Perform addition of two numbers
+- Print the variables
+- Print the size of  given variables

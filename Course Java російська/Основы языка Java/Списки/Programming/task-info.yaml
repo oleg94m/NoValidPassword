@@ -1,0 +1,20 @@
+type: code
+files:
+- name: src/Main.java
+  visible: true
+  text: |-
+    import java.util.Scanner;
+
+    class MyProgram{
+        public static void main(String[] args){
+            Scanner sc = new Scanner(System.in);
+
+        }
+    }
+  learner_created: false
+status: Unchecked
+feedback:
+  message: Failed to launch checking. For more information, see <a href="https://plugins.jetbrains.com/plugin/10081-edutools/docs/troubleshooting-guide.html#failed_to_launch_checking">the
+    Troubleshooting guide</a>
+  time: Thu, 08 Sep 2022 12:47:31 UTC
+record: -1

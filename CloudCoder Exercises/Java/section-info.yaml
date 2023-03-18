@@ -1,0 +1,71 @@
+content:
+- Is a string the same when reversed
+- Return true if a number is less than 10
+- Return true if parameter both positive and   10
+- Is the first parameter between the next two
+- Does any pair of parameters sum to 20
+- Groundhogs at a party_
+- Given two integers return their sum
+- Find the first occurrence of the word  the
+- Convert a date from a  to the usual MM DD YYYY
+- Is exactly one parameter positive
+- Count the number of times 'ab' occurs in a String
+- Get number of times two chars sequence is in a String
+- count chars where params are in any order
+- Check if params are in ascending order
+- Move the first 2 chars to the end of the String
+- Move first N characters to the end of the String
+- Cut out the middle char or chars of a String
+- Check if at least one int is positive
+- Double a character
+- Count the number of occurrences of a char
+- Count number of occurrences of a String
+- Return a String made up of every other char
+- Every other char starting at index 1
+- Copy each char n times
+- Find the max in an array
+- Count how many times a given char occurs
+- Count occurence of ch1 after ch2 occurs
+- Count chars outside a given range
+- Count the occurences of a given char in a given range
+- Count number of A's in a String
+- Reverse the characters in a String
+- Check if an array contains N and M
+- Check if n and m never occur next to each other
+- Check if an array does not contain N
+- Does an array contain N
+- Count how many times a number occurs
+- Find the minimum value of an array
+- Find the index of the min value
+- Find the sum of elements of an array
+- Return the middle of 3 values
+- Sum the value of all the numbers greater than a given number
+- Read two integers
+- Count number of 'ab' in the String
+- Find the last even number in a 2d array
+- Convert hexidecimal (base 16) string to integer
+- Find sum of digits of an integer
+- Double all of the characters in a string recursively
+- Recursively search for a value in a sequence
+- Check if a String does not contain 'a'
+- Check if a String's characters are in alphabetical order
+- Check that a String does not contain two given chars
+- Check if a String does not contain a given char
+- Check that a String does not contain ab
+- Check that two Strings contain none of the same letters
+- Count the number of times that 0 occurs in an array of ints
+- 'Count total # of times two vals occur in an int array'
+- Check if an array is sorted from smallest to largest
+- Count the number of  triples  in an array of ints
+- Check if n and m never occur next to each other (1)
+- Return the length of the longest in-order subsequence
+- Is an array of Strings in alphabetical order
+- Compute the average String length in an array of Strings
+- Find the middle character of a String
+- Count the values in an array that are divisble by 2
+- Count number of values divisible by X
+- Count the number of ints between two values
+- Check that two arrays have the same number of even values
+- Count the number of positives in a 2D int array
+- Check that an int array contains no duplicates
+- 'Check if an array of ints has same # positives and negatives'

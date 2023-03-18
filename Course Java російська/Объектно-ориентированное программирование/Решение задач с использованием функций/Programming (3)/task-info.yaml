@@ -1,0 +1,23 @@
+type: code
+custom_name: Programming
+files:
+- name: src/Main.java
+  visible: true
+  text: |-
+    import java.util.Scanner;
+
+    class Programm {
+
+        public static void main(String[] args) {
+            Scanner sc = new Scanner(System.in);
+            String s = sc.nextLine();
+            System.out.println(digit_count(s));
+        }
+
+    }
+  learner_created: false
+status: Unchecked
+feedback:
+  message: Please, login to check the task
+  time: Thu, 25 Aug 2022 11:58:46 UTC
+record: -1

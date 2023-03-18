@@ -1,0 +1,12 @@
+type: code
+files:
+- name: src/Main.java
+  visible: true
+  text: |-
+    public static String move2end(String str) {
+      //put your code here
+        return "cloud";
+    }
+  learner_created: false
+status: Unchecked
+record: -1

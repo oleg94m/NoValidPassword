@@ -1,0 +1,11 @@
+type: stepik
+title: CloudCoder Exercises
+language: English
+summary: Problem set based on CloudCoder exercise repository (https://cloudcoder.org/repo/).<br/><br/>Learn
+  more at <a href="https://stepik.org/course/3032">https://stepik.org/course/3032</a>
+programming_language: Java
+content:
+- Python
+- Java
+- C++
+mode: Study

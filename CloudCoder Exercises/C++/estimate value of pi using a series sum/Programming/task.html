@@ -1,0 +1,37 @@
+<html>
+ <head></head>
+ <body>
+  <h2 style="text-align: center;">estimate value of pi using a series sum</h2> 
+  <p> Consider the following equation: </p> 
+  <blockquote>
+    π = 4 × (1 - 1/3 + 1/5 - 1/7 + 1/9 - 1/11 + 1/13 + ...) 
+  </blockquote> 
+  <p> This equation defines the constant π using an infinite series. </p> 
+  <p> Complete the program so that it estimates π using the equation above. Since a program cannot compute the sum of an infinite number of terms, an integer input value will specify how many terms to use. For example, if the input is <b>4</b>, then the program should compute the value </p> 
+  <blockquote>
+    4 × (1 - 1/3 + 1/5 - 1/7) 
+  </blockquote> 
+  <p> Note that there are four terms in the series above. If the input is <b>9</b>, the program should compute the value </p> 
+  <blockquote>
+    4 × (1 - 1/3 + 1/5 - 1/7 + 1/9 - 1/11 + 1/13 - 1/15 + 1/17) 
+  </blockquote> 
+  <p> Note that there are 9 terms in in the series above. The output of the program a line of the form </p> 
+  <blockquote>
+   <pre>Estimate is <i>X</i></pre>
+  </blockquote> 
+  <p> where <i>X</i> is the estimate of π based on the specified number of terms, with 6 digits of precision. For example, if the input is <b>5</b>, then the output should be </p> 
+  <blockquote>
+   <pre>Estimate is 3.339683</pre>
+  </blockquote> 
+  <p>Hints:</p> 
+  <ul> 
+   <li>Variables are provided for number of terms and π estimate</li> 
+   <li>Input and output are already taken care of for you</li> 
+   <li>Use <code>double</code> variables to store the value of each term and the sum of the series</li> 
+   <li>Start series sum calculation with a loop that counts from 1 to <i>n</i>, where <i>n</i> is the number of terms</li> 
+   <li><b>Plan the loop</b> by determining how the correct term can be computed on each iteration of the loop. For example, how can you compute the correct denominator (1, 3, 5, 7, ...) for each term? How can you determine the correct sign (alternating positive and negative) for each term?</li> 
+   <li>You may want to have multiple loop variables.</li> 
+   <li>Don't use integer division!</li> 
+  </ul>
+ </body>
+</html><br><br><font color="gray">Memory limit: 256 MB</font><br><font color="gray">Time limit: 5 seconds</font><br><br>

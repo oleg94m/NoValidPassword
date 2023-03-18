@@ -1,0 +1,36 @@
+<html>
+ <head></head>
+ <body>
+  <h2 style="text-align: center;">how far will the potato fly?</h2> 
+  <p> The PotatoFlinger3000™ will launch a standard potato with user-configurable velocity and angle. As a member of the engineering team, you have been asked to write a simulator that will determine how far the potato will fly from its launch site. </p> 
+  <p> The distance <i>d</i> a projectile will fly can be computed with the formula </p> 
+  <blockquote> 
+   <i>d</i> = (
+   <i>v</i>2 sin 2θ) / 
+   <i>g</i> 
+  </blockquote> 
+  <p> where <i>v</i> is the velocity, θ is the angle from horizontal, and <i>g</i> is the downward acceleration due to gravity. (You can assume <i>g</i> = 9.81 m/s2.) </p> 
+  <p> Your program should read in two data values: </p> 
+  <ol> 
+   <li>The potato velocity (m/s)</li> 
+   <li>The angle relative to horizontal (radians)</li> 
+  </ol> 
+  <p> It should calculate the distance the potato will fly and print a message of the form </p> 
+  <blockquote>
+   <pre>The potato will fly <i>N</i> meters</pre>
+  </blockquote> 
+  <p> where <i>N</i> is the distance. For example, if the input values are <b>12.0</b> and <b>1.047</b>, then the output of the program should be similar to </p> 
+  <blockquote>
+   <pre>The potato will fly 12.715198 meters</pre>
+  </blockquote> 
+  <p>Hints:</p> 
+  <ul> 
+   <li>You'll need to include the <code>stdio.h</code> and <code>math.h</code> header files at the top of the program</li> 
+   <li>Use <code>scanf</code> to read the input values</li> 
+   <li>Use <code>printf</code> to print the output</li> 
+   <li>The <code>%lf</code> format specifier is used for <code>double</code> values</li> 
+   <li>The call <code>sin(theta)</code> will compute the sine of the angle <code>theta</code> (specified in radians)</li> 
+   <li>You can ignore air resistance, the curvature of the earth, the size of the PotatoFlinger3000™, etc.</li> 
+  </ul>
+ </body>
+</html><br><br><font color="gray">Memory limit: 256 MB</font><br><font color="gray">Time limit: 5 seconds</font><br><br>

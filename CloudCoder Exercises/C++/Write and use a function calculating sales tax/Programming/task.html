@@ -1,0 +1,8 @@
+<html>
+ <head></head>
+ <body>
+  <h2 style="text-align: center;">Write and use a function calculating sales tax</h2> 
+  <p>Write a function whose prototype is:<br> <code>double calcTotalWithTax(int countyId);</code><br>. This function read in the cost of an item (this will be a decimal). The function should then compute the tax that will be charged owed. This tax depends on the value of <code>countyId</code>: if <code>countyId</code> is less than 3, then the tax is equal to the cost of the item times 0.04 (e.g., only the 4% NY state sales tax). If <code>countyId</code> is between 3 and 10, then the tax is equal to the cost of the item time a 0.06 (e.g., the state sales tax AND a 2% county tax). Otherwise, e.g., <code>countyId</code> is greater than 10, the tax is equal to the cost of the item times 0.0875 (e.g., the state sales tax AND the maximum 4.75% county tax). Finally, <code>calcTotalWithTax</code> should return the sum of the item's cost and the tax you computed.</p> 
+  <p>Your program will also need a <code>main()</code> which reads in the county ID (this will be an integer), calls <code>calcTotalWithTax</code> and prints out the value it returns formatted to show exactly 2 places to the right of the decimal point.</p>
+ </body>
+</html><br><br><font color="gray">Memory limit: 256 MB</font><br><font color="gray">Time limit: 5 seconds</font><br><br>

@@ -1,0 +1,32 @@
+<html>
+ <head></head>
+ <body>
+  <h2 style="text-align: center;">Understanding character arrays, char, and char pointers</h2>
+  <h3>Test cases</h3> 
+  <ul> 
+   <li>print <code>a</code> <code>b</code> <code>c</code> <code>d</code> <code>y</code> and <code>z</code></li> 
+   <li>print <code>k</code></li> 
+   <li>print the <code>15th</code> alphabet</li> 
+   <li>print the <code>15th</code> alphabet in another way</li> 
+   <li>print the <code>19th</code> alphabet, <code>capitalized</code></li> 
+  </ul> 
+  <pre><code class="language-lang-cpp">#include &lt;stdio.h&gt;
+int main()
+{
+
+    char* alphabets = "abcdefghijklmnopqrstuvwxyz";
+    char a = "abcdefghijklmnopqrstuvwxyz"[0];  // alphabets[0];
+    char b;
+         b = "abcdefghijklmnopqrstuvwxyz"[1];  // alphabets[1];
+    char c = "abcdefghijklmnopqrstuvwxyz"[2];
+    char d = "abcdefghijklmnopqrstuvwxyz"[3];
+    char y = "abcdefghijklmnopqrstuvwxyz"[24];
+    char z = "abcdefghijklmnopqrstuvwxyz"[25]; // alphabets[25];
+
+    // print some characters as per the 1st test case
+
+    //...
+    return 0;
+}</code></pre> 
+ </body>
+</html><br><br><font color="gray">Memory limit: 256 MB</font><br><font color="gray">Time limit: 5 seconds</font><br><br>

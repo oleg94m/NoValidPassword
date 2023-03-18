@@ -1,0 +1,13 @@
+type: code
+files:
+- name: src/Main.java
+  visible: true
+  text: |-
+    public static boolean exactlyOnePositive(int a, int b, int c)
+    {
+        // code goes here
+        return ...;
+    }
+  learner_created: false
+status: Unchecked
+record: -1

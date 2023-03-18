@@ -1,0 +1,5 @@
+In the above example, the match is successful in the first two cases because the expressions a? and a* both allow for zero occurrences of the letter a.
+You'll also notice that the start and end indices are both zero, which is unlike any of the examples we've seen so far.
+The empty input string "" has no length, so the test simply matches nothing at index 0. Matches of this sort are known as a zero-length matches.
+A zero-length match can occur in several cases: in an empty input string, at the beginning of an input string, after the last character of an input string, or in between any two characters of an input string.
+Zero-length matches are easily identifiable because they always start and end at the same index position.

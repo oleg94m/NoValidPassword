@@ -1,0 +1,20 @@
+<html>
+ <head></head>
+ <body>
+  <h2 style="text-align: center;">Return the index of the last substring in the string or -1</h2>
+  <span><h2 style="text-align: center;">indexOf</h2></span> 
+  <p>Takes three arguments. The first one is the <code>target</code> and the other one is the string to <code>find</code>. If <code>find</code> is available within <code>target</code>, then return the index at which it occurs. </p> 
+  <ul> 
+   <li>If the third argument <code>first</code> is 1, then return the index of the first occurrence. Otherwise, return the index at which the last occurrence was matched.</li> 
+  </ul> 
+  <p>If <code>find</code> is not available, then return -1.</p> 
+  <h3>Example</h3> 
+  <ul> 
+   <li><code>"abcde", "ab"</code> -&gt; <code>0</code></li> 
+   <li><code>"abcdexy", "xy"</code> -&gt; <code>5</code></li> 
+   <li><code>"abcde"</code>, <code>"12"</code> -&gt; <code>-1</code></li> 
+  </ul> 
+  <h3>Simulation</h3> 
+  <p><a href="http://pythontutor.com/visualize.html#code='''%0D%0AInput%3A+++a+target+string+and+a+find+string%3B%0D%0AOutput%3A++an+index+at+which+the+match+occurs+%0D%0A++++++++If+there+is+no+match,+returns+-1%0D%0A'''%0D%0Adef+indexOf(target,+find)%3A%0D%0A++++result++%3D+-1%0D%0A++++last++++%3D++len(target)%0D%0A++++lastf+++%3D++len(find)%0D%0A++++%0D%0A++++for+offset+in+range+(0,+last)%3A+%0D%0A++++++++for+fi+in+range+(0,+lastf)%3A%0D%0A++++++++++++targetc,+findc+%3D+list(target%5Boffset%2Bfi%5D),+list(find%5Bfi%5D)%0D%0A++++++++++++if+targetc+!%3D+findc%3A%0D%0A++++++++++++++++break%3B++%23+break+from+inner+loop%0D%0A++++++++%23+If+%60fi%60+points+to+the+last+char,+it+implies+there+is+a+match!%0D%0A++++++++if+fi+%3D%3D+lastf-1%3A%0D%0A++++++++++++result+%3D+offset%0D%0A++++++++++++break++%23+break+from+the+outer+loop%0D%0A++++return+result%3B%0D%0A++++%0D%0Abase++%3D+%22abcde-this-fg%22%0D%0Atoken+%3D+%22this%22%0D%0A%0D%0Amatch_i+%3D+indexOf(list(base),+list(token))%0D%0Aprint+match_i%0D%0Amatch_i+%3D+indexOf(list(%22abcde%22),+list(%22zz%22))%0D%0Aprint+match_i&amp;mode=display&amp;origin=opt-frontend.js&amp;cumulative=false&amp;heapPrimitives=false&amp;drawParentPointers=false&amp;textReferences=false&amp;showOnlyOutputs=false&amp;py=2&amp;rawInputLstJSON=%5B%5D&amp;curInstr=48" rel="nofollow noopener noreferrer">Non-functional</a><br><a href="http://pythontutor.com/visualize.html#code=%0D%0A'''%0D%0AInput+%3A++String1+and+String+2%0D%0AOutput%3A++If+there+is+a+match,+returns+1,+otherwise+-1%0D%0A'''%0D%0Adef+ismatch+(s1,+s2)%3A%0D%0A++++all_match+%3D+1++%23+we+assume+there+will+be+a+match%0D%0A++++%0D%0A++++for+fi+in+range+(0,+len(s2))%3A+%0D%0A++++++++s1c,+s2c++%3D+list(s1%5Bfi%5D),+list(s2%5Bfi%5D)%0D%0A++++++++if+(s1%5Bfi%5D++!%3D+s2%5Bfi%5D)%3A%0D%0A++++++++++++all_match+%3D+-1%0D%0A++++++++++++break%0D%0A++++return+all_match%0D%0A%0D%0A%0D%0A'''%0D%0AInput%3A+++a+target+string+and+a+find+string%3B%0D%0AOutput%3A++an+index+at+which+the+match+occurs+%0D%0A++++++++If+there+is+no+match,+returns+-1%0D%0A'''%0D%0Adef+indexOf(target,+find)%3A%0D%0A++++result++%3D+-1%0D%0A++++last++++%3D++len(target)%0D%0A++++lastf+++%3D++len(find)%0D%0A++++%0D%0A++++for+offset+in+range+(0,+last)%3A+%0D%0A++++++++targeto+%3D+target%5Boffset%3A%5D%0D%0A++++++++%0D%0A++++++++if+ismatch(targeto,+find)+!%3D+-1%3A+%0D%0A+++++++++++result+%3D+offset%0D%0A+++++++++++break%0D%0A+++++++%0D%0A++++return+result%3B%0D%0A++++%0D%0Abase++%3D+%22abcde-this-fg%22%0D%0Atoken+%3D+%22this%22%0D%0A%0D%0Amatch_i+%3D+indexOf(list(base),+list(token))%0D%0Aprint+match_i%0D%0Amatch_i+%3D+indexOf(list(%22abcde%22),+list(%22zz%22))%0D%0Aprint+match_i%0D%0A&amp;mode=display&amp;origin=opt-frontend.js&amp;cumulative=false&amp;heapPrimitives=false&amp;drawParentPointers=false&amp;textReferences=false&amp;showOnlyOutputs=false&amp;py=2&amp;rawInputLstJSON=%5B%5D&amp;curInstr=0" rel="nofollow noopener noreferrer">Functional</a></p> 
+ </body>
+</html><br><br><font color="gray">Memory limit: 256 MB</font><br><font color="gray">Time limit: 5 seconds</font><br><br>

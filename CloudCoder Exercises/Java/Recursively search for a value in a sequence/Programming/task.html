@@ -1,0 +1,15 @@
+<html>
+ <head></head>
+ <body>
+  <p> The <code>binarySearch</code> method takes four parameters: </p> 
+  <ul> 
+   <li><code>arr</code>, a <em>sorted</em> array of <code>int</code> values</li> 
+   <li><code>searchVal</code>, an <code>int</code> value</li> 
+   <li><code>start</code>, a start index (inclusive)</li> 
+   <li><code>end</code>, an end index (exclusive)</li> 
+  </ul> 
+  <p> The method should return the index of the occurrence of <code>searchVal</code> within the range of indices from <code>start</code> (inclusive) to <code>end</code> (exclusive), if there is one. Otherwise, it should return <code>-1</code> to indicate that <code>searchVal</code> does not occur within the specified range of indices. </p> 
+  <p> You can use the fact that the array is sorted to make this method very efficient. A simple base case is a range that does not contain any elements: this means that the <code>searchVal</code> does not occur in the range and <code>-1</code> should be returned. </p> 
+  <p> If the range is nonempty, check the element in the middle of the range. If it matches the <code>searchVal</code>, return its index: this is a successful search. Otherwise, see whether the middle element is greater than or less than the <code>searchVal</code>. If it's greater than the <code>searchVal</code>, then the <code>searchVal</code> must occur to the left of the middle element. Otherwise, it must occur to the right of the middle element. A recursive call can then be used to continue the search. </p>
+ </body>
+</html><br><b>Sample Input:</b><br><pre><code class="language-no-highlight">3 5 7 9 11 14 16 18 19 21<br>14 0 10<br></code></pre><br><b>Sample Output:</b><br><pre><code class="language-no-highlight">5</code></pre><br><br><br><font color="gray">Memory limit: 256 MB</font><br><font color="gray">Time limit: 8 seconds</font><br><br>

@@ -1,0 +1,13 @@
+<html>
+ <head></head>
+ <body>
+  <h1 style="text-align: center;">Merging sorted arrays</h1> 
+  <p><em>GTG 14.1</em><br>Given sorted arrays <code>arr1</code> and <code>arr2</code> of lengths <code>n</code> and <code>m</code> respectively, return an array <code>out</code> containing the union of the elements of both arrays, without any duplicates.</p> 
+  <ul> 
+   <li>Use <code>brute force</code> to quickly establish the passing of test cases</li> 
+   <li>Use <code>binary search</code> to search through <code>arr1</code> (the bigger of the two) between inserting the element in <code>arr2</code> into <code>out</code></li> 
+  </ul> 
+  <h1 style="text-align: center;">Example</h1> 
+  <p><code>[1, 1]</code>, <code>[]</code> -&gt; <code>[1]</code><br><code>[1]</code>, <code>[2]</code> -&gt; <code>[1, 2]</code><br><code>[1, 2]</code>, <code>[2]</code>, -&gt; <code>[1, 2]</code><br><code>[3, 4]</code>, <code>[1, 2]</code> -&gt; <code>[1, 2, 3, 4]</code><br><code>[3, 4, 4]</code>, <code>[1, 1, 2]</code> -&gt; <code>[1, 2, 3, 4]</code><br><code>[1, 2, 3, 6, 7, 8]</code>, <code>[4, 4]</code> -&gt; <code>[1, 2, 3, 4, 6, 7, 8]</code> </p> 
+ </body>
+</html><br><b>Sample Input:</b><br><pre><code class="language-no-highlight">[1], [2]<br></code></pre><br><b>Sample Output:</b><br><pre><code class="language-no-highlight">[1, 2]</code></pre><br><br><br><font color="gray">Memory limit: 256 MB</font><br><font color="gray">Time limit: 5 seconds</font><br><br>

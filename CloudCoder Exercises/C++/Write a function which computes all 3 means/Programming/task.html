@@ -1,0 +1,17 @@
+<html>
+ <head></head>
+ <body>
+  <h2 style="text-align: center;">Write a function which computes all 3 means</h2> 
+  <p>Did you know there are 3 different ways of computing means? Typically we use mean to specify <a href="http://en.wikipedia.org/wiki/Arithmetic_mean" rel="nofollow noopener noreferrer">the arithmetic mean</a>, but it could also be the <a href="http://en.wikipedia.org/wiki/Geometric_mean" rel="nofollow noopener noreferrer">geometric mean</a>, or the <a href="http://en.wikipedia.org/wiki/Harmonic_mean" rel="nofollow noopener noreferrer">harmonic mean</a>. The algorithm to compute the arithmetic mean of <span>n</span> values is:</p> 
+  <pre>arithmMean ← (value1 + value2 + ... + value<span>n) / <span>n</span>
+</span></pre> 
+  <p>The algorithm to compute the geometric mean of <span>n</span> values is:</p> 
+  <pre>geoMean ← pow(value1 * value2 * ... * value<span>n, 1.0/<span>n</span>)
+</span></pre> 
+  <p>The algorithm to compute the harmonic mean of <span>n</span> values is:</p> 
+  <pre>harMean ← <span>n</span> / (1.0/value1 + 1.0/value2 + ... + 1.0/value<span>n)
+</span></pre> 
+  <p>For your program, write a function, named <code>computeMean</code>, that has 7 parameters of type <code>double</code>. The first five parameters are the values whose means we will compute and should be passed-by-value. The last two parameters should be passed-by-reference and will be used to return the geometric mean and harmonic mean of the first five parameters. Your function should also return a double equal to the arithmetic mean of the first five parameters.</p> 
+  <p>Write your <code>main()</code> function so that uses a loop that repeats 3 times. Each time through your loop, your program should read in all 5 values, call <code>computeMean</code> and then print out the 3 different means with a space after each. <b>Do NOT print out a newline (or <code>endl</code>) at the end of your <code>cout</code>)</b></p>
+ </body>
+</html><br><br><font color="gray">Memory limit: 256 MB</font><br><font color="gray">Time limit: 5 seconds</font><br><br>

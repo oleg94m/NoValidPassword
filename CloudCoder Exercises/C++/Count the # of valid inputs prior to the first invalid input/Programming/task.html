@@ -1,0 +1,36 @@
+<html>
+ <head></head>
+ <body>
+  <h2 style="text-align: center;">Count the # of valid inputs prior to the first invalid input</h2> 
+  <p> Write a program that continually reads input values from a sequence of numbers until a 'termination' value is detected. Once the 'termination' value is detected, your program should print out the number of values that were seen prior to the 'termination' value. The total number of values in the numeric sequence is unknown and the 'termination' value can appear anywhere in the sequence. </p> 
+  <p> The value <b>-1</b> is the 'termination' value. All other integer values should be considered valid input and counted as such. When the value -1 is detected in the input sequence, your program should immediately stop reading values and print the number of valid values that were read. </p> 
+  <p> For example, if the input sequence to your program is the following: </p>
+  <blockquote>
+   <pre>10 -1</pre>
+  </blockquote> then your program should print: 
+  <blockquote>
+   <pre>1 Valid</pre>
+  </blockquote> 
+  <p> Another example, if the input sequence to your program is the following: </p>
+  <blockquote>
+   <pre>10 19 8 -1 77 18 1001</pre>
+  </blockquote> then your program should print: 
+  <blockquote>
+   <pre>3 Valid</pre>
+  </blockquote> 
+  <p> Another example, if the input sequence to your program is the following: </p>
+  <blockquote>
+   <pre>-1</pre>
+  </blockquote> then your program should print: 
+  <blockquote>
+   <pre>0 Valid</pre>
+  </blockquote> 
+  <p> Hints: </p>
+  <ul> 
+   <li> Since the number of values in the input sequence is unknown, you should use a <code>while-loop</code>, NOT a <code>for-loop</code>. </li> 
+   <li> Think about when the <code>while-loop</code> should terminate and use that as the condition. </li> 
+   <li> You can assume that all test inputs will include a termination value somewhere in the sequence. That is, you do NOT have to write your program to handle the case where the input sequence does not contain the value -1. </li> 
+   <li> The termination value can appear anywhere in the numeric sequence. It may be the first value, the last value, or somewhere in the middle of the sequence. </li> 
+  </ul> 
+ </body>
+</html><br><br><font color="gray">Memory limit: 256 MB</font><br><font color="gray">Time limit: 5 seconds</font><br><br>

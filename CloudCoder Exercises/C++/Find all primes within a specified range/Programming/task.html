@@ -1,0 +1,28 @@
+<html>
+ <head></head>
+ <body>
+  <h2 style="text-align: center;">Find all primes within a specified range</h2> 
+  <p>Write the function <b>findPrimes()</b> to print all prime numbers within a user specified range. </p>
+  <p>For example, for <b>1, 10</b> the output would be </p> 
+  <blockquote> 
+   <pre>2 3 5 7</pre> 
+  </blockquote> 
+  <p>Another example, for <b>15, 37</b> the output would be </p> 
+  <blockquote> 
+   <pre>17 19 23 29 31 37</pre> 
+  </blockquote> 
+  <p>Another example, for <b>24, 28</b> the output would be </p> 
+  <blockquote> 
+   <pre>No primes found</pre> 
+  </blockquote> 
+  <p> Comments describe how to proceed. You should replace each "TODO" comment with appropriate code. </p> 
+  <ol> 
+   <li>The function <code>findPrimes()</code> should have 2 integer parameters but return no value. Do not forget to add an appropriate <i>function prototype</i> before <code>int main()</code> for the function. </li> 
+   <li>If the range contains 2, then 2 will be the first (and only) even prime number in the output. In this case, the lower range bound should then be set to 3. </li> 
+   <li>Any number <code>n</code> greater than 2 is <b>not</b> prime, if it is <i>evenly</i> divisible by any number between 2 and the <code>sqrt(n)</code> inclusive. </li> 
+   <li>A number <code>n</code> is <i>evenly divisible</i> by another number <code>k</code> (where <code>k &lt; n</code>) if <code>n == (n/k)*k</code> since if it is not evenly divisible the integer division will cause truncation. </li> 
+   <li>The math library function for square root is <code>sqrt()</code>. </li> 
+  </ol> 
+  <p>Note: For a challenge, make the function more efficient by only checking <i>odd</i> values within the range (and greater than 2) for divisibility with <i>odd</i> values between 3 and <code>sqrt(n)</code> (consider how to handle the case when 3 is within the range). Furthermore, once an evenly divisible factor is found, the number is <b>not</b> prime, and thus no further factors need to be checked. </p>
+ </body>
+</html><br><br><font color="gray">Memory limit: 256 MB</font><br><font color="gray">Time limit: 5 seconds</font><br><br>

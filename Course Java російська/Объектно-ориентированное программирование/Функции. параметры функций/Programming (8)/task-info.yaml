@@ -1,0 +1,20 @@
+type: code
+custom_name: Programming
+files:
+- name: src/Main.java
+  visible: true
+  text: |-
+    import java.util.Scanner;
+
+    class Example{
+        public static void main(String[] args){
+            Scanner sc = new Scanner(System.in);
+            String s = sc.nextLine();
+            sortByLength(s);
+        }
+
+        //разместите свою функцию, например здесь
+    }
+  learner_created: false
+status: Unchecked
+record: -1

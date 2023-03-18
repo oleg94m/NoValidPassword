@@ -1,0 +1,20 @@
+<html>
+ <head></head>
+ <body>
+  <h2 style="text-align: center;">Check if openers and closers match-up</h2>
+  <h2 style="text-align: center;">Bracket Validator </h2>
+  <p>You're working with an intern that keeps coming to you with JavaScript code that won't run because the braces, brackets, and parentheses are off. To save you both some time, you decide to write a braces/brackets/parentheses validator.</p> 
+  <p>Let's say:</p> 
+  <ul> 
+   <li>'(', '{', '[' are called "openers."</li> 
+   <li>')', '}', ']' are called "closers."</li> 
+  </ul> 
+  <p>Write an efficient function that tells us whether or not an input string's openers and closers are properly nested.</p> Examples: 
+  <p><code>"{ [ ] ( ) }"</code> should return <code>True</code></p> 
+  <p><code>"{ [ ( ] ) }"</code> should return <code>False</code></p> 
+  <p><code>"{ [ }"</code> should return <code>False</code></p> 
+  <p>Simply making sure each opener has a corresponding closer is not enough — we must also confirm that they are correctly ordered.For example, <code>"{ [ ( ] ) }"</code> should return <code>False</code>, even though each opener can be matched to a closer.</p> 
+  <p>We can do this in <code>O(n)</code> time and space. One iteration is all we need!</p> Bonus: 
+  <p>In Ruby, sometimes expressions are surrounded by vertical bars, "|like this|". Extend your validator to validate vertical bars. Careful: there's no difference between the "opener" and "closer" in this case—they're the same character!</p> 
+ </body>
+</html><br><br><font color="gray">Memory limit: 256 MB</font><br><font color="gray">Time limit: 5 seconds</font><br><br>

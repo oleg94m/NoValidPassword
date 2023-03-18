@@ -1,0 +1,21 @@
+In the above example, the match is successful in the first two cases because the expressions a? and a* both allow for zero occurrences of the letter a. You'll also notice that the start and end indices are both zero, which is unlike any of the examples we've seen so far. The empty input string "" has no length, so the test simply matches nothing at index 0. Matches of this sort are known as a zero-length matches. A zero-length match can occur in several cases: in an empty input string, at the beginning of an input string, after the last character of an input string, or in between any two characters of an input string. Zero-length matches are easily identifiable because they always start and end at the same index position.
+
+Let's explore zero-length matches with a few more examples. Change the input string to a single letter "a" and you'll notice something interesting:
+
+ 
+Enter your regex: a?
+Enter input string to search: a
+I found the text "a" starting at index 0 and ending at index 1.
+I found the text "" starting at index 1 and ending at index 1.
+
+Enter your regex: a*
+Enter input string to search: a dsadasdas
+I found the text "a" starting at index 0 and ending at index 1.
+I found the text "" starting at index 1 and ending at index 1.
+
+Enter your regex: a+
+Enter input string to search: a
+I found the text "a" starting at index 0 and ending at index 1.
+All three quantifiers found the letter "a", but the first two also found a zero-length match at index 1; that is, after the last character of the input string. Remember, the matcher sees the character "a" as sitting in the cell between index 0 and index 1, and our test harness loops until it can no longer find a match. Depending on the quantifier used, the presence of "nothing" at the index after the last character may or may not trigger a match.
+
+Now change the input string to the letter "a" five times in a row and you'll get the following:

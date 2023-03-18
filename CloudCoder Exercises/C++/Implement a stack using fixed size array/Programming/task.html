@@ -1,0 +1,26 @@
+<html>
+ <head></head>
+ <body>
+  <h2 style="text-align: center;">Implement a stack using fixed size array</h2>
+  <h3>Fixed array as Stack</h3> 
+  <p>The goal: Implement the functions <code>push()</code>, <code>pop()</code> and <code>peek()</code> for a stack that is implemented using a fixed integer array. Read the comments below for more details.</p> 
+  <pre><code class="language-lang-cpp">// Using global variable to define the stack, for convenience
+// But generally, this is *not* a recommended coding style
+//
+int stack[10]; // this stack can hold a maximum of how many items?
+int top = -1;  // if top == -1, it indicates that the stack is empty</code></pre> 
+  <h3>push()</h3> 
+  <p><code>push()</code> must accept an integer <code>val</code> as an <code>integer</code> parameter, and push it on top of the stack. If there should be no space on the the stack, then the function should return <code>-1</code>. Also, print <code>Stack overflow!</code> to indicate overflow condition.</p> 
+  <pre><code class="language-lang-cpp">int push(int val) { /* your code goes here */ }</code></pre> 
+  <h3>pop()</h3> 
+  <p><code>pop()</code> should fetch the integer element on top of the stack and remove it off the stack as well. If there is nothing in the stack, then the function should return <code>-1</code>. Also, print <code>Stack underflow!</code> to indicate this condition.</p> 
+  <pre><code class="language-lang-cpp">int pop() {  /* your code goes here */ }</code></pre> 
+  <h3>peek()</h3> 
+  <p><code>peek()</code> should only fetch the integer element on top of the stack, but not remove it from the stack. If there is nothing in the stack, then the function should return <code>-1</code>. Also, print <code>Stack empty!</code> to indicate this condition.</p> 
+  <pre><code class="language-lang-cpp">int peek() {  /* your code goes here */ }</code></pre> 
+  <h3>Functions already defined</h3> 
+  <p>Both the below functions behave true to their names. Both of them take a <code>count</code> value so that many number of items can be read from the stdin, and printed to the stdout respectively.</p> 
+  <pre><code class="language-lang-cpp">void populate_the_stack(int);   // reads values from stdin
+void display_the_stack(int);    // prints all stack elements and pops them</code></pre> 
+ </body>
+</html><br><br><font color="gray">Memory limit: 256 MB</font><br><font color="gray">Time limit: 5 seconds</font><br><br>

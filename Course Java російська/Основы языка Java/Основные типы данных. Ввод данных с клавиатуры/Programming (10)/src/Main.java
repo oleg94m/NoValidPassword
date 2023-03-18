@@ -1,0 +1,1 @@
+import java.util.Scanner; class MyProgram{ public static void main(String[] args){ Scanner sc = new Scanner(System.in); int h = sc.nextInt(); int a = sc.nextInt(); int b = sc.nextInt(); int q = h-b; int p = a-b; System.out.print((q+p-1)/p); } }

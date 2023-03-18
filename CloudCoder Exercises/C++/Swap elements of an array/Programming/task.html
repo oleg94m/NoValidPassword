@@ -1,0 +1,30 @@
+<html>
+ <head></head>
+ <body>
+  <h2 style="text-align: center;">Swap elements of an array</h2> 
+  <p>Complete the program so that it swaps the first element of an array with the last, the second element with the next to last, etc. until the array is reversed. </p> 
+  <p>For example, for <b>5, 3, 2, 6, 8</b> the output would be </p> 
+  <blockquote> 
+   <pre>8 6 2 3 5</pre> 
+  </blockquote> 
+  <p>Another example, for <b>7, 9, 14, 3, 6, 2, 13, 1</b> the output would be </p> 
+  <blockquote> 
+   <pre>1 13 2 6 3 14 9 7</pre> 
+  </blockquote> 
+  <p> Comments describe how to proceed. You should replace each "TODO" comment with appropriate code. </p> 
+  <p>Hints:</p> 
+  <ol> 
+   <li>The array is named <b>A[ ]</b> and the number of elements it contains is stored in a variable <b>len</b>. </li> 
+   <li>Use a <code>for</code> loop to proceed through the array swapping pairs of values. </li> 
+   <li>For element <b>A[i]</b>, consider what the <i>index</i> of the element it should be swapped with is. </li> 
+   <li>To swap two values <b>A[i]</b> and <b>A[j]</b>, use a temp variable 
+    <blockquote> 
+     <pre>temp = A[i]</pre> 
+     <pre>A[i] = A[j]</pre> 
+     <pre>A[j] = temp</pre> 
+    </blockquote> </li> 
+   <li>Consider when the loop should stop, i.e. when all the values have been swapped <i>once</i>. </li> 
+  </ol> 
+  <p>Note that the test inputs include the number of values the array will contain as the first input. </p>
+ </body>
+</html><br><br><font color="gray">Memory limit: 256 MB</font><br><font color="gray">Time limit: 5 seconds</font><br><br>
