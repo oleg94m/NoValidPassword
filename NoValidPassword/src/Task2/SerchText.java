@@ -41,7 +41,7 @@ public class SerchText {
             lastIndex = searchMatcher.end();
         }
 
-        // Виводимо результат
+
         System.out.printf("Кількість згадувань слова \"%s\" у тексті до стоп-слова \"%s\": %d", searchWord, stopWord, count);
     }
 }
