@@ -14,7 +14,7 @@ public class FileRead {
             FileWriter writer = new FileWriter(fileName);
             writer.write(text);
             writer.close();
-            System.out.println("Текст успішно записано у файл " + fileName);
+            System.out.println("Текст успішно записано у файxdfd;ljzdzgл " + fileName);
         } catch (IOException e) {
             System.out.println("Помилка запису у файл " + fileName);
             e.printStackTrace();
