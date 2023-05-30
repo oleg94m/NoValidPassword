@@ -8,8 +8,8 @@ import org.hibernate.cfg.Configuration;
 public class Main {
     public static void main(String[] args) {
         Animal1 animal1= new Animal1();
-        animal1.setAge(5);
-        animal1.setName("kot");
+        animal1.setAge(56);
+        animal1.setName("keрot");
         animal1.setTail(true);
 
 
