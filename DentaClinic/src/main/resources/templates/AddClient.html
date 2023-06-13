@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Новий Клієнт</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+<div class="container">
+  <form role="form" class="form-horizontal" action="/?????????" method="post">
+    <h3>Новий клієнт</h3>
+    <select class="selectpicker form-control form-group" name="group">
+      <option value="-1">Masiuk N.I</option>
+      <option value="-2">Masiuk E.M</option>
+      <option value="-3">Ivaha M.E</option>
+      <option value="-4">Lavetskiy R.A.</option>
+      <option value="-5">Lisovska O.H.</option>
+      <option value="-6">Kushinska G.B.</option>
+      <option value="-7">Vavrusevish G.Z.</option>
+      <option value="-8">Ivaha M.E.</option>
+
+      <tbody>
+      <tr th:each=" patients:${patients}">
+        <td th:text = "patients.lastName"></td>
+        <td th:text = "patients.firstName"></td>
+        <td th:text = "patients.midlName"></td>
+        <td th:text = "patients.gender"></td>
+        <td th:text = "patients.DateBirthday"></td>
+        <td th:text = "patients.phone"></td>
+        <td th:text = "patients.pastConditions"></td>
+        <td th:text = "patients.relatedConditions"></td>
+        <td th:text = "patients.allergies"></td>
+        <td th:text = "patients.medications"></td>
+        <td th:text = "patients.bite"></td>
+        <td th:text = "patients.complaints"></td>
+      </tr>
+
+      </tbody>
+
+    </select>
+    <input class="form-control form-group" type="text" name="lastName" placeholder="Прізвище">
+    <input class="form-control form-group" type="text" name="firstName" placeholder="Ім'я">
+    <input class="form-control form-group" type="text" name="midlName" placeholder="Побатьков">
+    <label for="gender">Стать:</label>
+    <select class="form-control form-group" id="gender" name="gender">
+      <option value="MALE">Чоловік</option>
+      <option value="FEMALE">Жінка</option>
+    </select>
+    <input class="form-control form-group" type="date" name="DateBirthday" placeholder="День народження">
+    <input class="form-control form-group" type="text" name="pastConditions" placeholder=" description">
+    <input class="form-control form-group" type="text" name="relatedConditions" placeholder=" description">
+    <input class="form-control form-group" type="text" name="allergies" placeholder="allergies">
+    <input class="form-control form-group" type="text" name="medications" placeholder=" medications">
+    <label for="gender">Прикус:</label>
+    <select class="form-control form-group" id="bite" name="bite">
+      <option value="ортогнатичний">ортогнатичний</option>
+      <option value="глибокий">глибокий</option>
+      <option value="перехресний">перехресний</option>
+      <option value="дистальний">дистальний</option>
+      <option value="мезіальний">мезіальний</option>
+      <option value="прямий">прямий</option>
+      <option value="відкритий">відкритий</option>
+    </select>
+    <input class="form-control form-group" type="text" name="complaints" placeholder="complaints">
+
+    <input type="submit" class="btn btn-primary" value="Додати">
+  </form>
+</div>
+
+<script>
+  $('.selectpicker').selectpicker();
+</script>
+</body>
+</html>

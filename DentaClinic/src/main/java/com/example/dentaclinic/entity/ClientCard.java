@@ -1,6 +1,7 @@
 package com.example.dentaclinic.entity;
 
 
+import com.fasterxml.jackson.annotation.JsonProperty;
 import jakarta.persistence.*;
 import lombok.*;
 
@@ -18,33 +19,32 @@ public class ClientCard {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id;
-    @Column(name = "last_name", nullable = false)
+    @Column(name = "last_name")
     private String lastName;
-    @Column(name = "first_name", nullable = false)
+    @Column(name = "first_name")
     private String firstName;
-    @Column(name = "midl_Name")
+    @Column(name = "middle_name")
     private String midlName;
 
     public enum Gender {
-        MAN,
-        Woman
+        чоловік,
+        жінка
     }
 
     @Column(name = "gender")
     @Enumerated(EnumType.STRING)
     private Gender gender;
 
-    @Column(name = "date_of_birthday")
+    @JsonProperty("date_of_birth")
     private Date DateBirthday;
 
     @Column(name = "phone", nullable = false)
-    //@Pattern(regexp = "\\+380\\d{9}", message = "Phone number should start with '+380' and have 9 additional digits.")
     private String phone;
 
-    @Column(name = "past_Conditions")
+    @Column(name = "past_conditions")
 
     private String pastConditions;
-    @Column(name = "related_Conditions")
+    @Column(name = "related_conditions")
 
     private String relatedConditions;
     @Column(name = "allergies")
@@ -54,9 +54,12 @@ public class ClientCard {
 
     private String medications;
 
+    public enum Bite {
+        ортогнатичний, глибокий, перехресний, дистальний, мезіальний, прямий,відкритий
+    }
     @Column(name = "bite")
-    //@Pattern(regexp = "^( глибокий|ортогнатичний|перехресний|прямий|мезіальний)$", message = "Invalid bite option.")
-    private String bite;
+    @Enumerated(EnumType.STRING)
+    private Bite bite;
 
     @Column(name = "complaints")
     private String complaints;

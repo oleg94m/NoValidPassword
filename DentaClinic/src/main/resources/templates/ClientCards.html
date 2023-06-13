@@ -1,17 +1,92 @@
 <!DOCTYPE html>
-<html xmlns:th="htt">
+<html xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
-    <!-- Latest compiled and minified CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-
+    <title>Карата Клієнта</title>
+    <link rel="stylesheet"
+          href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+          crossorigin="anonymous">
 </head>
 <body>
-<div class ="conteiner">
-    <div class="ClienCard">
-        <h1>Картка Клієнта</h1>
+<nav class="navbar navbar-expand-md bg-dark navbar-dark">
+    <!-- Brand -->
+    <a class="navbar-brand" href="#">Карта Кієнта</a>
 
+    <!-- Toggler/collapsibe Button -->
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Navbar links -->
+    <div class="collapse navbar-collapse" id="collapsibleNavbar">
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link" th:href="@{/patients}">Карта Клієнта</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" th:href="@{/patients}">Розклад</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+<div class="container-fluid">
+    <div class="row">
+        <h1>Карта клієнта</h1>
+    </div>
+
+    <div class="row">
+        <div class="col-lg-3">
+            <a th:href="@{/patients/new}" class="btn btn-primary btn-sm mb-3">Додати пацієнта</a>
+        </div>
+    </div>
+    <div class="table-responsive">
+        <table class="table table-striped table-bordered">
+            <thead class="table-dark">
+            <tr>
+                <th scope="col">Прізвище</th>
+                <th scope="col">Ім'я</th>
+                <th scope="col">Прізвище</th>
+                <th scope="col">Номер</th>
+                <th scope="col">Стать</th>
+                <th scope="col">Дата народження</th>
+                <th scope="col">Телефон</th>
+                <th scope="col">Захворювання</th>
+                <th scope="col">Супутні захворювання</th>
+                <th scope="col">Алергія</th>
+                <th scope="col">Медикаменти</th>
+                <th scope="col">Прикус</th>
+                <th scope="col">Скарги</th>
+                <th scope="col">Actions</th>
+            </tr>
+            </thead>
+
+            <tbody>
+            <tr th:each="patient : ${patients}">
+                <td th:text="${patient.lastName}"></td>
+                <td th:text="${patient.firstName}"></td>
+                <td th:text="${patient.midlName}"></td>
+                <td th:text="${patient.gender}"></td>
+                <td th:text="${patient.DateBirthday}"></td>
+                <td th:text="${patient.phone}"></td>
+                <td th:text="${patient.pastConditions}"></td>
+                <td th:text="${patient.relatedConditions}"></td>
+                <td th:text="${patient.allergies}"></td>
+                <td th:text="${patient.medications}"></td>
+                <td th:text="${patient.bite}"></td>
+                <td th:text="${patient.complaints}"></td>
+                <td>
+                    <a th:href="@{/patients/edit/{id}(id=${patient.id})}"
+                       class="btn btn-primary">Update</a>
+
+                    <a th:href="@{/patients/{id}(id=${patient.id})}"
+                       class="btn btn-danger">Delete</a>
+                </td>
+            </tr>
+            </tbody>
+
+        </table>
     </div>
 </div>
 </body>
