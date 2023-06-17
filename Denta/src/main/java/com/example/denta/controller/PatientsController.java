@@ -42,7 +42,7 @@ public class PatientsController {
 		return "patients";
 	}
 
-	@RequestMapping("/create_patient")
+	@RequestMapping("/create_patients")
 	public String patientsAddPage(Model model) {
 		model.addAttribute("doctor", patientsService.listDoctor());
 		return "create_patients";
@@ -55,7 +55,7 @@ public class PatientsController {
 		return "patients";
 	}
 
-	@RequestMapping(value = "/patient/delete", method = RequestMethod.POST)
+	@RequestMapping(value = "/patients/delete", method = RequestMethod.POST)
 	public ResponseEntity<Void> delete(
 			@RequestParam(value = "toDelete[]", required = false)
 			long[] toDelete) {
@@ -79,7 +79,7 @@ public class PatientsController {
 		Doctor doctor = (doctorId != DEFAULT_GROUP_ID) ?
 				patientsService.findDoctor(doctorId) : null;
 
-		Patients patients = new Patients(firstName, lastName,midlName, phone, pastConditions, relatedConditions,allergies,medications,complaints);
+		Patients patients = new Patients(doctor,firstName, lastName,midlName, phone, pastConditions,relatedConditions,allergies,medications,complaints);
 		patientsService.addPatients(patients);
 
 		return "redirect:/";

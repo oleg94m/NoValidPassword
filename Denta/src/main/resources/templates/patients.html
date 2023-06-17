@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html xmlns:th="http://www.thymeleaf.org">
 <meta charset="UTF-8">
 <head>
 	<title>Карта клієнта</title>
@@ -15,15 +15,14 @@
 			<!-- Collect the nav links, forms, and other content for toggling -->
 			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 				<ul id="groupList" class="nav navbar-nav">
-					<li><button type="button" id="add" class="btn btn-default navbar-btn">Add Contact</button></li>
-					<li><button type="button" id="delete_contact" class="btn btn-default navbar-btn">Delete Contact</button></li>
+					<a th:href = "@{/patients/add}" class = "btn btn-primary btn-sm mb-3"> Додати</a>
+					<li><button type="button" id="delete_patients" class="btn btn-default navbar-btn">Delete Contact</button></li>
 					<li class="dropdown">
 						<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">doctor <span class="caret"></span></a>
 						<ul class="dropdown-menu">
-							<li><a href="/">Default</a></li>
-							<% for (Doctor doctor : doctors) { %>
-							<li><a href="/doctor/<%=doctor.getId()%>"><%=doctor.getName()%></a></li>
-							<% } %>
+							<th:block th:each="doctor : ${doctor}">
+								<li><a th:href="@{/doctor/{id}(id=${doctor.id})}" th:text="${doctor.name}"></a></li>
+							</th:block>
 						</ul>
 					</li>
 				</ul>
@@ -33,6 +32,8 @@
 					</div>
 					<button type="submit" class="btn btn-default">Submit</button>
 				</form>
+
+
 			</div><!-- /.navbar-collapse -->
 		</div><!-- /.container-fluid -->
 	</nav>
@@ -41,61 +42,56 @@
 		<thead>
 		<tr>
 			<td></td>
-			<td><b>Name</b></td>
-			<td><b>Surname</b></td>
-			<td><b>Phone</b></td>
-			<td><b>E-mail</b></td>
-			<td><b>Doctor</b></td>
+			<th scope="col">Прізвище</th>
+			<th scope="col">Ім'я</th>
+			<th scope="col">Прізвище</th>
+			<th scope="col">Номер</th>
+			<th scope="col">Телефон</th>
+			<th scope="col">Захворювання</th>
+			<th scope="col">Супутні захворювання</th>
+			<th scope="col">Алергія</th>
+			<th scope="col">Медикаменти</th>
+			<th scope="col">Скарги</th>
+			<th scope="col">asdasdasd</th>
 		</tr>
 		</thead>
-
+		<th:block>
+		<tr th:each="patients : ${patients}">
+		</th:block>
 		<tr>
-			<td><input type="checkbox" name="toDelete[]" value="<%=parients.getId()%>" id="checkbox_<%=parients.getId()%>"/></td>
-			<td th:text="${patient.lastName}"></td>
-			<td th:text="${patient.firstName}"></td>
-			<td th:text="${patient.midlName}"></td>
-			<td th:text="${patient.phone}"></td>
-			<td th:text="${patient.pastConditions}"></td>
-			<td th:text="${patient.relatedConditions}"></td>
-			<td th:text="${patient.allergies}"></td>
-			<td th:text="${patient.medications}"></td>
+			<th:block>
+		<td th:text="${patients.lastName}"></td>
+		<td th:text="${patients.firstName}"></td>
+		<td th:text="${patients.midlName}"></td>
+		<td th:text="${patients.phone}"></td>
+		<td th:text="${patients.pastConditions}"></td>
+		<td th:text="${patients.relatedConditions}"></td>
+		<td th:text="${patients.allergies}"></td>
+		<td th:text="${patients.medications}"></td>
+		<td th:text="${patients.complaints}"></td>
+		<td th:text="${patients.doctor}"></td>
+				</th:block>
+		<td>
+			<th:block th:if="${patients.doctor != null}">
+				<span th:text="${patients.doctor.name}"></span>
+			</th:block>
+			<th:block th:unless="${patients.doctor != null}">
+				Default
+			</th:block>
+		</td>
+	</tr>
 
-			<td th:text="${patient.complaints}"></td>
-			<td th:text="${patient.doctor}"></td>
-			<td><%=Parients.getDoctor().getName()%></td>
-			<% } else { %>
-			<td>Default</td>
-			<td>masiuk</td>
-			<% } %>
-		</tr>
-		<% } %>
 	</table>
-
 	<nav aria-label="Page navigation">
 		<ul class="pagination">
-			<% for (int i = 1; i <= pages; i++) { %>
-			<li><a href="/?page=<%=i - 1%>"><%=i%></a></li>
-			<% } %>
+			<th:block th:each="i : ${#numbers.sequence(1, pages)}">
+				<li><a th:href="@{/(page=${i - 1})}" th:text="${i}"></a></li>
+			</th:block>
 		</ul>
 	</nav>
+
 </div>
 
-<script>
-	$('.dropdown-toggle').dropdown();
 
-	$('#create_patients').click(function(){
-		window.location.href='/create_patients';
-	});
-
-	$('#delete_patients').click(function(){
-		var data = { 'toDelete[]' : []};
-		$(":checked").each(function() {
-			data['toDelete[]'].push($(this).val());
-		});
-		$.post("/patients/delete", data, function(data, status) {
-			window.location.reload();
-		});
-	});
-</script>
 </body>
 </html>

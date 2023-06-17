@@ -1,6 +1,5 @@
 package com.example.denta.service.impl;
 
-
 import com.example.denta.dao.DoctorDAO;
 import com.example.denta.dao.PatientsDAO;
 import com.example.denta.entity.Doctor;
